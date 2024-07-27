@@ -19,12 +19,7 @@ The Stroke Listener is a Krita plugin designed to simulate a keypress each time 
 
 Demo triggering a script and inverting colors:
 
-<video width="50%" height="auto" align="center" controls>
-  <source src="/readme-assets/demo-stroke-listener.mp4" type="video/mp4">
-</video>
-
-<!-- ![Demo](/readme-assets/demo-stroke-listener.webm) -->
-
+https://github.com/user-attachments/assets/6ecf79ca-9948-40a4-8905-f1b1e3b57a44
 
 ## Installation
 
