@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--BBD's Krita Script Starter, Feb 2018 -->
+<head>
+    <title>Stroke Listener Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        code {
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stroke Listener for Krita</h1>
+    
+    <p>The Stroke Listener is a Krita plugin designed to simulate a keypress each time a left-click is detected on the drawing canvas. The keypress can be customized via the plugin's docker.</p>
+
+    <h2>Features</h2>
+    <ol>
+        <li>Preset Shortcuts: Choose from a list of predefined keyboard shortcuts.</li>
+        <li>Custom Shortcuts: Create your own shortcuts using Ctrl, Shift, Alt, and a single key.</li>
+        <li>Toggle Listening: Enable or disable the keypress simulation with a checkbox.</li>
+        <li>Canvas Detection: Only triggers the keypress simulation when clicking on the drawing canvas</li>
+    </ol>
+
+    <h2>Launching the Docker</h2>
+    <ol>
+        <li>Navigate to Settings -> Dockers and enable Click Listener to display the Docker.</li>
+    </ol>
+
+    <h2>Usage</h2>
+    <p>Once the Stroke Listener is enabled, it will appear as a new docker in Krita. Follow these steps to use the plugin:</p>
+    <ol>
+        <li>Select a preset from the dropdown menu. If you select "custom," additional options will appear to define a custom shortcut.</li>
+        <li>If "custom" is selected, configure the shortcut by checking the desired modifier keys (Ctrl, Shift, Alt) and entering a single character in the input box.</li>
+        <li>Check the "Not Listening" checkbox to activate the listener. The label will change to "Listening!" and turn white.</li>
+        <li>Click on the drawing canvas. If the cursor is over the canvas, the defined shortcut will be simulated.</li>
+    </ol>
+
+    <h2>Notes</h2>
+    <p>The plugin only simulates keypresses when the cursor is over a <code>QOpenGLWidget</code>, which represents the drawing surface in Krita.</p>
+
+    <h2>Example</h2>
+    <p>To set up a shortcut "Ctrl+Shift+1" that triggers on a left-click:</p>
+    <ol>
+        <li>Select "Ctrl+Shift+1" from the dropdown menu.</li>
+        <li>Check the "Not Listening" checkbox to activate the listener.</li>
+        <li>Click on the drawing canvas to simulate the "Ctrl+Shift+1" shortcut.</li>
+    </ol>
+
+    <p>For further information, visit our GitHub repository:</p>
+    <a href="https://github.com/josepablo-espinoza/krita-stroke-listener">https://github.com/josepablo-espinoza/krita-stroke-listener</a>
+</body>
+</html>
