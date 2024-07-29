@@ -140,6 +140,10 @@ class StrokeListenerDocker(DockWidget):
         if not isinstance(widget_under_cursor, QOpenGLWidget):
             return
         
+        # Check if any modifier keys are pressed
+        if QApplication.keyboardModifiers() & (Qt.ControlModifier | Qt.ShiftModifier | Qt.AltModifier):
+            return
+        
         shortcut = self.shortcut
 
         if shortcut:

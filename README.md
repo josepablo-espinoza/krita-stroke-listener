@@ -14,6 +14,7 @@ The Stroke Listener is a Krita plugin designed to simulate a keypress each time 
 - **Custom Shortcuts**: Create your own shortcuts using Ctrl, Shift, Alt, and a single key.
 - **Toggle Listening**: Enable or disable the keypress simulation with a checkbox.
 - **Canvas Detection**: Only triggers the keypress simulation when clicking on the drawing canvas
+- **Modifier Keys Detection**: Doesn't trigger the shortcut if it detects the user is pressing CTRL, SHIFT, or ALT keys when drawing.
 
 ### Demo
 
