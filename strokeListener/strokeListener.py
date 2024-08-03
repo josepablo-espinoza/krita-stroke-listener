@@ -85,6 +85,7 @@ class StrokeListenerDocker(DockWidget):
         self.shortcut_input.textChanged.connect(self.updateShortcut)
 
         self.shortcut = ""  # Shortcut to execute
+        self.updateShortcut()
 
     def update_checkbox_label(self):    
         if self.listening_checkbox.isChecked():
